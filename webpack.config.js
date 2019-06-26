@@ -29,10 +29,6 @@ const common = {
         loaders: ['url-loader?limit=100000&mimetype=image/png'],
         exclude: /node_modules/
       },
-      {
-        test: /\.less$/,
-        loader: 'style!css!less'
-      }
     ]
   }
 };
@@ -42,8 +38,8 @@ if (TARGET === 'dev') {
   module.exports = merge(common, {
     devtool: 'inline-source-map',
     devServer: {
-      publicPath: 'http://localhost:8181/',
-      port: '8181',
+      publicPath: 'http://localhost:8182/',
+      port: '8182',
       host: '0.0.0.0',
       colors: true,
       historyApiFallback: true,
