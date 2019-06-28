@@ -1,6 +1,6 @@
 // TODO - fix the onlyContries props. Currently expects that as an array of country object, but users should be able to send in array of country isos
 
-import { some, find, reduce, map, filter, includes } from 'lodash/collection';
+import { some, find, reduce, filter, includes } from 'lodash/collection';
 import { findIndex, head, tail } from 'lodash/array';
 import { debounce, memoize } from 'lodash/function';
 import { trim, startsWith } from 'lodash/string';
@@ -892,16 +892,12 @@ class ReactPhoneInput extends React.Component {
         const { selectedCountry, showDropdown, formattedNumber } = this.state;
         const {
             disableDropdown,
-            className,
             component: Component = TextField,
         } = this.props;
 
-        console.log(this.props);
-
         return (
-            <Container className={className}>
+            <Container>
                 <Component
-                    className="phone-input-field"
                     onChange={this.handleInput}
                     onClick={this.handleInputClick}
                     onFocus={this.handleInputFocus}
@@ -919,7 +915,6 @@ class ReactPhoneInput extends React.Component {
                     {...this.props.inputExtraProps}
                 />
                 <FlagContainer
-                    className="flag-selected"
                     disabled={this.props.disabled}
                     error={this.props.inputExtraProps.error}
                     onKeyDown={this.handleKeydown}>

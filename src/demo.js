@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import ReactPhoneInput from './index';
+import ReactPhoneInput from '../dist/index';
 import { TextField } from '@material-ui/core';
 
 export default render(

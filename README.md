@@ -135,48 +135,6 @@ function handleOnChange(value) {
   </tr>
 
   <tr>
-    <td> containerClass </td>
-    <td> string </td>
-    <td colspan="2"> class for container </td>
-  </tr>
-  <tr>
-    <td> inputClass </td>
-    <td> string </td>
-    <td colspan="2"> class for input </td>
-  </tr>
-  <tr>
-    <td> buttonClass </td>
-    <td> string </td>
-    <td colspan="2"> class for dropdown button </td>
-  </tr>
-  <tr>
-    <td> dropdownClass </td>
-    <td> string </td>
-    <td colspan="2"> class for dropdown container </td>
-  </tr>
-
-  <tr>
-    <td> containerStyle </td>
-    <td> object </td>
-    <td colspan="2"> styles for container </td>
-  </tr>
-  <tr>
-    <td> inputStyle </td>
-    <td> object </td>
-    <td colspan="2"> styles for input </td>
-  </tr>
-  <tr>
-    <td> buttonStyle </td>
-    <td> object </td>
-    <td colspan="2"> styles for dropdown button </td>
-  </tr>
-  <tr>
-    <td> dropdownStyle </td>
-    <td> object </td>
-    <td colspan="2"> styles for dropdown container </td>
-  </tr>
-
-  <tr>
     <td> inputExtraProps </td>
     <td> object </td>
     <td colspan="2"> props to pass into the input </td>
