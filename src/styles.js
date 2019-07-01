@@ -554,8 +554,6 @@ export const Arrow = styled.div`
 export const CountryListWrapper = styled.div`
     display: block;
     width: 100%;
-    position: absolute;
-    margin: 10px 10px 10px -1px;
 `;
 
 export const CountryList = styled.ul`

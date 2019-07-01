@@ -10,9 +10,6 @@ import TextField from '@material-ui/core/TextField';
 import { styled } from '@material-ui/styles';
 
 const TextFieldStyled = styled(TextField)({
-    '&::before': {
-        border: 0,
-    },
     '& input': {
         paddingLeft: '36px',
     },
