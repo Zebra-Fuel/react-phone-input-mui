@@ -471,6 +471,7 @@ const getFlagPosition = (country) => {
 
 export const Container = styled.div`
     position: relative;
+    display: block;
 
     &:disabled {
         cursor: not-allowed;
