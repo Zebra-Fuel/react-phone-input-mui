@@ -7,6 +7,13 @@ import { trim, startsWith } from 'lodash/string';
 import React from 'react';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
+import { styled } from '@material-ui/styles';
+
+const TextFieldStyled = styled(TextField)({
+    '& input': {
+        paddingLeft: '36px',
+    },
+});
 
 import { document } from './global.js';
 import countryData from './country_data.js';
@@ -19,6 +26,7 @@ import {
     Country,
     CountryName,
     DialCode,
+    CountryListWrapper,
     CountryList,
     Divider,
 } from './styles';
@@ -892,7 +900,7 @@ class ReactPhoneInput extends React.Component {
         const { selectedCountry, showDropdown, formattedNumber } = this.state;
         const {
             disableDropdown,
-            component: Component = TextField,
+            component: Component = TextFieldStyled,
         } = this.props;
 
         return (
@@ -938,9 +946,10 @@ class ReactPhoneInput extends React.Component {
                         </Flag>
                     </SelectedFlag>
                 </FlagContainer>
-                <div ref={(el) => (this.dropdownContainerRef = el)}>
+                <CountryListWrapper
+                    ref={(el) => (this.dropdownContainerRef = el)}>
                     {showDropdown && this.getCountryDropdown()}
-                </div>
+                </CountryListWrapper>
             </Container>
         );
     }

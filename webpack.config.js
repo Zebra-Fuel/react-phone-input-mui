@@ -79,18 +79,15 @@ if (TARGET === 'build') {
                     commonjs: 'react',
                     amd: 'react',
                 },
-                // 'styled-components': {
-                //     commonjs: 'styled-components',
-                //     commonjs2: 'styled-components',
-                //     amd: 'styled-components',
-                // },
+                'styled-components': {
+                    commonjs: 'styled-components',
+                    commonjs2: 'styled-components',
+                    amd: 'styled-components',
+                },
             },
         ],
         optimization: {
             minimize: true,
-            // splitChunks: {
-            //     chunks: 'all',
-            // },
         },
         plugins: [
             new webpack.DefinePlugin({
@@ -99,12 +96,6 @@ if (TARGET === 'build') {
                 },
                 __DEV__: false,
             }),
-            // new webpack.optimize.UglifyJsPlugin({
-            //     compress: {
-            //         warnings: false,
-            //     },
-            // }),
-            // new webpack.optimize.DedupePlugin(),
         ],
     });
 }
